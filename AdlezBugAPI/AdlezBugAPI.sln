@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AdlezBugAPI", "AdlezBugAPI\AdlezBugAPI.pyproj", "{1D9E9F92-F333-48F4-82D9-B98064464178}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestAPI", "TestAPI\TestAPI.pyproj", "{3962F614-F8F2-4996-8DBB-5F3B07B932D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1D9E9F92-F333-48F4-82D9-B98064464178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D9E9F92-F333-48F4-82D9-B98064464178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3962F614-F8F2-4996-8DBB-5F3B07B932D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3962F614-F8F2-4996-8DBB-5F3B07B932D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
