@@ -2,25 +2,22 @@
 #Copyright (c) 2015 Milkey Mouse
 
 import webbrowser
-import requests
-import pprint
+#import requests
+import urllib2
 import json
+import sys
 
-head = raw_input("Title: ")
-body = raw_input("Description: ")
-
-print "Requesting..."
+head = sys.argv[1]
+body = sys.argv[2]
 
 test_json = {"title" : head, "body" : body}
 
+test_json = json.dumps(test_json)
 headers = {"Content-Type":"application/json"}
+req = urllib2.Request("http://team-ivan.com:1337/report", test_json, headers)
+result_json = json.loads(urllib2.urlopen(req).read())
 
-r = requests.post("http://team-ivan.com:1337/report", json=test_json, headers=headers)
+#r = requests.post("http://team-ivan.com:1337/report", data=test_json, headers=headers)
+#result_json = r.json()
 
-result_json = r.json()
-
-pprint.PrettyPrinter().pprint(result_json)
-
-print "Topic created at " + result_json["url"]
-
-webbrowser.open(result_json["url"])
+print result_json["url"]
